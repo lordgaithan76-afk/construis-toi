@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Construis-toi — Ebooks pour s'inspirer et se construire</title>
+<meta name="description" content="Ebooks de développement personnel, finance et productivité pour t'aider à te construire. Paiement simple, PDF reçu tout de suite.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Construis-toi — Ebooks pour s'inspirer et se construire">
+<meta property="og:description" content="Développement personnel, finance, productivité : des ebooks clairs, à lire sur ton téléphone.">
+<!-- Aperçu WhatsApp/Facebook : ajoute ici ton image (lien complet) :
+<meta property="og:image" content="https://TON-SITE.netlify.app/apercu.png"> -->
+<style>
+:root{--bg:#faf7f2;--card:#fff;--text:#1e2433;--muted:#5d6475;--accent:#c8501e;--on:#fff;--dark:#14213d;--line:#e6e0d6;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root{--bg:#12151d;--card:#1b2030;--text:#f1eee8;--muted:#a3a9b8;--accent:#ff8a57;--on:#1a1206;--dark:#f1eee8;--line:#2b3247}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:12px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:16px 0;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:1.2rem}.logo span{color:var(--accent)}
+nav a{color:var(--muted);text-decoration:none;font-size:.9rem;margin-left:14px}
+.hero{padding:28px 0 12px}
+.hero h1{font-size:clamp(1.9rem,7vw,2.8rem);line-height:1.15;margin:0 0 12px;letter-spacing:-.8px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p{color:var(--muted);margin:0 0 20px}
+.btn{display:inline-block;background:var(--accent);color:var(--on);text-decoration:none;font-weight:700;padding:12px 20px;border-radius:12px;border:0;font-size:1rem;cursor:pointer;font-family:inherit}
+.btn.ghost{background:transparent;color:var(--text);border:2px solid var(--line)}
+.btn.off{background:var(--line);color:var(--muted);cursor:default}
+.btn.sm{padding:8px 14px;font-size:.88rem}
+h2{font-size:1.45rem;margin:36px 0 10px;letter-spacing:-.4px}
+.cats{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px}
+.chip{padding:7px 14px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--text);font:inherit;font-size:.9rem;cursor:pointer}
+.chip.on{background:var(--dark);color:var(--bg);border-color:var(--dark)}
+.grid{display:grid;gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.cover{height:150px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#fff;text-align:center;padding:14px}
+.cover img{width:100%;height:100%;object-fit:cover}
+.cover .em{font-size:2.6rem;line-height:1}.cover .ct{font-weight:700;font-size:.95rem;opacity:.95}
+.body{padding:18px}
+.tag{font-size:.74rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.6px}
+.card h3{margin:4px 0 6px;font-size:1.2rem;line-height:1.3}
+.card p{margin:0 0 10px;color:var(--muted);font-size:.95rem}
+.card ul{margin:0 0 12px;padding-left:20px;font-size:.93rem}.card li{margin:2px 0}
+.meta{font-size:.82rem;color:var(--muted);margin-bottom:14px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.price{font-weight:800;font-size:1.2rem}
+.links{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.steps{display:grid;gap:12px;counter-reset:s}
+.step{display:flex;gap:14px;align-items:flex-start}
+.step::before{counter-increment:s;content:counter(s);flex:none;width:32px;height:32px;border-radius:50%;background:var(--dark);color:var(--bg);display:grid;place-items:center;font-weight:800}
+.muted{color:var(--muted)}
+.box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+details{border-bottom:1px solid var(--line);padding:10px 0}summary{cursor:pointer;font-weight:600}
+details p{margin:8px 0 0;color:var(--muted);font-size:.95rem}
+.cta{background:var(--dark);color:var(--bg);border-radius:18px;padding:22px;margin-top:34px}
+.cta h2{margin-top:0}.cta p{opacity:.85;margin:0 0 14px}
+footer{margin:40px 0 24px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><div class="logo">Construis<span>-toi</span></div>
+<nav><a href="#ebooks">Ebooks</a><a href="#apropos">À propos</a><a href="#conditions">Conditions</a></nav></header>
+
+<section class="hero">
+<h1>Les idées simples pour <em>te construire</em> et avancer.</h1>
+<p>Ebooks clairs sur le développement personnel, l'argent et la productivité. À lire sur ton téléphone, à appliquer dès aujourd'hui.</p>
+<a class="btn" href="#ebooks">Voir les ebooks</a>
+</section>
+
+<section id="ebooks">
+<h2>Les ebooks</h2>
+<div class="cats" id="cats"></div>
+<div class="grid" id="grid"></div>
+</section>
+
+<section>
+<h2>Comment ça marche</h2>
+<div class="steps">
+<div class="step"><div><strong>Choisis ton ebook</strong><br><span class="muted">Lis ce que tu vas apprendre, ou demande un extrait gratuit.</span></div></div>
+<div class="step"><div><strong>Paie en toute simplicité</strong><br><span class="muted">Le bouton « Acheter » t'envoie vers le paiement CamerPay.</span></div></div>
+<div class="step"><div><strong>Télécharge ton PDF</strong><br><span class="muted">Le lien de téléchargement est en bas de ton reçu.</span></div></div>
+</div>
+</section>
+
+<section id="apropos">
+<h2>À propos</h2>
+<div class="box" id="about"></div>
+</section>
+
+<section id="conditions">
+<h2>Conditions</h2>
+<div class="box">
+<details><summary>Comment je reçois mon ebook ?</summary><p>Juste après le paiement, ton reçu contient le lien pour télécharger le PDF. Garde-le bien.</p></details>
+<details><summary>Puis-je être remboursé ?</summary><p>Comme l'ebook est un produit numérique téléchargé immédiatement, il n'est pas remboursable après téléchargement. Si le fichier ne s'ouvre pas, écris-nous : on le règle.</p></details>
+<details><summary>Le lien ne marche pas, que faire ?</summary><p>Contacte-nous sur WhatsApp avec la preuve de ton paiement, et nous te renvoyons ton ebook.</p></details>
+<details><summary>Puis-je partager ou revendre le PDF ?</summary><p>Non. L'ebook est pour ton usage personnel. Merci de respecter le travail de l'auteur.</p></details>
+</div>
+</section>
+
+<section class="cta">
+<h2>Une question ?</h2>
+<p>Écris-nous sur WhatsApp, on te répond dès que possible.</p>
+<a class="btn" id="wa" href="#" style="background:var(--accent)">Nous écrire sur WhatsApp</a>
+</section>
+
+<footer>© <span id="y"></span> Construis-toi · Tous droits réservés</footer>
+</div>
+
+<script>
+/* ============ À MODIFIER : tout se règle ici ============ */
+var WHATSAPP = "237600000000";   // ton numéro avec l'indicatif, sans +
+var ABOUT = "Passionné d'architecture, d'informatique et de finance, j'écris des guides simples pour t'aider à mieux gérer ton argent, ton temps et tes projets. Mon objectif : des conseils concrets que tu peux appliquer dès aujourd'hui.";
+var EBOOKS = [
+ {id:"discipline", cat:"Développement personnel", emoji:"💪", titre:"Les clés de la discipline",
+  desc:"Des méthodes simples pour tenir tes décisions et arrêter de repousser à demain.",
+  points:["Comprendre pourquoi tu procrastines","Construire une routine qui tient","Rester motivé sans te forcer"],
+  pages:"40 pages", prix:2000, lien:"", extrait:"", image:""},
+ {id:"argent", cat:"Finance", emoji:"💰", titre:"Gérer son argent dès le premier revenu",
+  desc:"Budget, épargne et erreurs à éviter pour ne plus finir le mois à zéro.",
+  points:["Faire un budget en 10 minutes","Épargner même avec un petit revenu","Les erreurs d'argent les plus courantes"],
+  pages:"35 pages", prix:2000, lien:"", extrait:"", image:""},
+ {id:"temps", cat:"Productivité", emoji:"⏱️", titre:"10 habitudes pour mieux utiliser ton temps",
+  desc:"Organise tes journées et avance sur ce qui compte vraiment.",
+  points:["Fixer tes priorités chaque jour","Éliminer les voleurs de temps","Une semaine type à copier"],
+  pages:"30 pages", prix:2000, lien:"", extrait:"", image:""}
+];
+/* ======================================================== */
+
+var COLORS=["#c8501e,#7a2e0f","#1d6f5c,#0d3d33","#3b4cc0,#1d2766","#8a3ca8,#4a1d5e"];
+var cats=["Tous"].concat(EBOOKS.map(function(e){return e.cat}).filter(function(v,i,a){return a.indexOf(v)===i}));
+var cur="Tous";
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x)e.textContent=x;return e}
+function ok(u){return /^https?:\/\//i.test(u||"")}
+function fmt(n){return String(n).replace(/\B(?=(\d{3})+(?!\d))/g," ")+" FCFA"}
+function link(txt,u,cls){var a=el("a",cls||"btn",txt);a.href=u;a.target="_blank";a.rel="noopener";return a}
+
+function draw(){
+ var cE=document.getElementById("cats"),gE=document.getElementById("grid");cE.innerHTML="";gE.innerHTML="";
+ cats.forEach(function(c){var b=el("button","chip"+(c===cur?" on":""),c);b.onclick=function(){cur=c;draw()};cE.appendChild(b)});
+ EBOOKS.filter(function(e){return cur==="Tous"||e.cat===cur}).forEach(function(e){
+  var card=el("article","card");card.id=e.id;
+  var cv=el("div","cover");
+  if(ok(e.image)){var im=document.createElement("img");im.src=e.image;im.alt="Couverture : "+e.titre;im.loading="lazy";cv.appendChild(im)}
+  else{cv.style.background="linear-gradient(135deg,"+COLORS[cats.indexOf(e.cat)%COLORS.length]+")";cv.appendChild(el("div","em",e.emoji||"📘"));cv.appendChild(el("div","ct",e.cat))}
+  card.appendChild(cv);
+  var b=el("div","body");
+  b.appendChild(el("div","tag",e.cat));b.appendChild(el("h3","",e.titre));b.appendChild(el("p","",e.desc));
+  if(e.points&&e.points.length){var ul=document.createElement("ul");e.points.forEach(function(p){ul.appendChild(el("li","",p))});b.appendChild(ul)}
+  b.appendChild(el("div","meta",[e.pages,"Format PDF","Lecture sur téléphone"].filter(Boolean).join(" · ")));
+  var r=el("div","row");r.appendChild(el("span","price",fmt(e.prix)));
+  if(ok(e.lien))r.appendChild(link("Acheter",e.lien));else r.appendChild(el("span","btn off","Bientôt disponible"));
+  b.appendChild(r);
+  var l=el("div","links");
+  if(ok(e.extrait))l.appendChild(link("Lire un extrait gratuit",e.extrait,"btn ghost sm"));
+  var cp=el("button","btn ghost sm","Copier le lien");cp.onclick=function(){
+   var u=location.href.split("#")[0]+"#"+e.id;
+   (navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){cp.textContent="Lien copié ✓"},function(){prompt("Copie ce lien :",u)})};
+  l.appendChild(cp);b.appendChild(l);
+  card.appendChild(b);gE.appendChild(card)});
+}
+draw();
+if(location.hash){var t=document.getElementById(location.hash.slice(1));if(t)setTimeout(function(){t.scrollIntoView()},50)}
+document.getElementById("about").appendChild(el("p","",ABOUT));
+document.getElementById("wa").href="https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent("Bonjour, j'ai une question sur vos ebooks.");
+document.getElementById("y").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
